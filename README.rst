@@ -10,7 +10,6 @@ Directory structure is shown belows :
 
 ::
 
-   ├── build     #Build scripts. Makefiles are located in.
    ├── host      #Host side. Application code is located in.
    ├── import    #External code. imported code or repository
    └── rtl       #FPGA RTL code.
