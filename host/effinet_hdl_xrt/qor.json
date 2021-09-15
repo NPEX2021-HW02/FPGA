@@ -1,0 +1,43 @@
+{
+    "containers": [
+        {
+            "name": "krnl_effnet_inf", 
+            "meet_system_timing": "true", 
+            "accelerators": [
+                {
+                    "name": "krnl_effnet_inf", 
+                    "check_timing": "true", 
+                    "PipelineType": "none", 
+                    "check_latency": "true", 
+                    "check_warning": "false", 
+                    "loops": [
+                        {
+                            "name": "read1", 
+                            "PipelineII": "1"
+                        }, 
+                        {
+                            "name": "read2", 
+                            "PipelineII": "1"
+                        }, 
+                        {
+                            "name": "read3", 
+                            "PipelineII": "1"
+                        }, 
+                        {
+                            "name": "read4", 
+                            "PipelineII": "1"
+                        }, 
+                        {
+                            "name": "operations", 
+                            "PipelineII": "1"
+                        }, 
+                        {
+                            "name": "write", 
+                            "PipelineII": "1"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
